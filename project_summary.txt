@@ -1,0 +1,16 @@
+=== Project Summary: Air‑Quality Forecast‑Model Robustness for Digital‑Twin Use‑Cases ===
+Dataset: São‑Paulo‑region hourly air‑quality records (São José do Rio Preto station)
+Target pollutant: PM10
+Model: Random‑Forest Regressor (n_estimators=50; predictors: pm10_lag1, pm10_lag2)
+
+Key RMSE‑Results (µg/m³):
+  Clean‑sensor baseline:      3.35
+  5 % missing‑lag‑values:     4.02
+  5 % positive‑spike outliers:4.65
+
+Main finding:
+Small‑share sensor‑stream disturbances increase forecast‑error; outliers cause larger‑accuracy‑drop than missing‑values.
+Implication: Robustness screening is recommended before deploying such models in urban‑digital‑twin monitoring workflows.
+
+Output artifact saved: robustness_rmse_plot.png
+==========================================================================================
