@@ -16,6 +16,8 @@ This project evaluates how a Random‑Forest‑based PM10‑forecasting model be
 ‑ RMSE with 5 % missing lag‑values = 4.02 µg/m³
 ‑ RMSE with 5 % positive‑spike outliers = 4.65 µg/m³
 Outliers produced a larger accuracy drop than missing lag‑values in this test. The finding highlights the need for robustness screening before deploying similar forecasting models for urban‑digital‑twin monitoring use‑cases.
+
+![RMSE comparison chart](robustness_rmse_plot.png)
  
 ## Tools Used
  
